@@ -1,71 +1,130 @@
 # 🤖 AI Code Assistant
 
-An interactive AI-powered coding assistant built using **Streamlit** and **Google Gemini API**.  
-It helps you **generate**, **optimize**, and **explain code** in various programming languages.
+A Streamlit-based chatbot powered by Google Gemini (Generative AI) to generate, optimize, and explain source code in multiple programming languages. Perfect for developers, learners, and AI enthusiasts!
 
 ---
 
-## ✨ Features
+## 📌 Features
 
-- 🧠 **Code Generation** — Supports Python, Java, C, HTML, CSS, JavaScript
-- 🛠️ **Code Optimization** — Improves your existing code automatically
-- 📖 **Explanation** — Extracts and explains comments from code
-- 💬 **Follow-up Questions** — Handles general queries with AI
-- 🧼 **Clear Chat** — Reset conversation anytime
-
----
-
-## 🖼️ Screenshot
-
-![Screenshot](assets/screenshot.png)  
-*(Add your own image at `assets/screenshot.png`)*
+* 💬 Chat-based code assistant
+* 🧠 Powered by Gemini 1.5 Flash (Google Generative AI)
+* 🌐 Supports: Python, Java, C, HTML, CSS, JavaScript
+* ⚙️ Code optimization
+* 🧾 Code comment explanation
+* 🧼 Clear chat functionality
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Installation & Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/PHHS-07/ai-code-assistant.git
+git clone https://github.com/your-username/ai-code-assistant.git
 cd ai-code-assistant
-'''
-2. Install dependencies
-'''bash
-pip install -r requirements.txt
-'''
+```
 
-3. Add your Gemini API key
-Edit the line in main.py:
 
+2\. Install Requirements
+
+```
+bash
+```
+
+CopyEdit
+
+`pip install -r requirements.txt`
+
+### 3. Set Up Gemini API
+
+* Go to [https://makersuite.google.com/app](https://makersuite.google.com/app)
+* Get your API key and paste it inside `app.py`:
+
+```
 python
-'''
-genai.configure(api_key="YOUR_API_KEY")
-'''
-💡 For better security, consider using a .env file and os.environ.
+```
 
-🧪 Run the App
+CopyEdit
 
-'''bash
-streamlit run main.py
-'''
+`genai.configure(api_key="YOUR_API_KEY")`
 
-📄 License
+> 🔐 For security, consider storing the key in an environment variable or `.env` file using `python-dotenv`.
 
-This project is licensed under the Apache License 2.0.
-See the LICENSE file for full details.
+---
 
-🌐 Optional: Deploy on Streamlit Cloud
+## 📦 Requirements
 
- 1.Push this project to GitHub
+These are listed in `requirements.txt`:
 
- 2.Go to streamlit.io/cloud
+```
+txt
+```
 
- 3.Connect your GitHub repository
+CopyEdit
 
- 4.Choose main.py as the entry point
+`streamlit google-generativeai protobuf>=3.20.3`
 
- 5.Add your Gemini API key as a secret environment variable
+Optional:
 
-👨‍💻 Author
-Developed by PHHS-07 – powered by Google Gemini & Streamlit.
+```
+txt
+```
+
+CopyEdit
+
+`python-dotenv # If you want to manage API keys securely`
+
+Install all dependencies with:
+
+```
+bash
+```
+
+CopyEdit
+
+`pip install -r requirements.txt`
+
+---
+
+## 🚀 Usage
+
+Start the assistant using:
+
+```
+bash
+```
+
+CopyEdit
+
+`streamlit run app.py`
+
+### ✅ Example Prompts
+
+* `Generate a Python function to check for prime numbers`
+* `Optimize this Java code:` (paste code)
+* `Write HTML for a contact form`
+* `Explain this code:` (paste code with comments)
+
+---
+
+## ⚖️ License
+
+This project is licensed under the **Apache License 2.0**.
+See the LICENSE file for details.
+
+---
+
+## 👤 Author
+
+Created by **\[Your Name]**
+
+* GitHub: [github.com/your-username](https://github.com/your-username)
+* Email: [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+## ⚠️ Disclaimer
+
+This AI Code Assistant is intended for **educational and development purposes only**.
+Generated or optimized code should be **reviewed manually** before use in production environments.
+The assistant uses large language models and may produce incomplete or inaccurate results at times.
