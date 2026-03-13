@@ -116,10 +116,10 @@ See the LICENSE file for details.
 
 ## 👤 Author
 
-Created by **\[Your Name]**
+Created by **\[HARI HARA SUDHAN P]**
 
-* GitHub: [github.com/your-username](https://github.com/your-username)
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* GitHub: [github.com/your-username](https://github.com/PHHS-07)
+* Email: [your-email@example.com](mailto:phariharasudhan2004@gmail.com)
 
 ---
 
